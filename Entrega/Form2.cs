@@ -45,7 +45,9 @@ namespace Entrega
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -80,7 +82,9 @@ namespace Entrega
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form5 form1 = new Form5();
+            form1.Show();
         }
 
         private void pl_intertop_Paint(object sender, PaintEventArgs e)

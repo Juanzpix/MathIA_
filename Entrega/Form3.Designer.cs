@@ -36,8 +36,19 @@
             this.btn_back = new System.Windows.Forms.Button();
             this.tx_renpass = new System.Windows.Forms.TextBox();
             this.lb_renpass = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             tx_npass = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // tx_npass
+            // 
+            tx_npass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            tx_npass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tx_npass.Location = new System.Drawing.Point(324, 202);
+            tx_npass.Multiline = true;
+            tx_npass.Name = "tx_npass";
+            tx_npass.Size = new System.Drawing.Size(364, 30);
+            tx_npass.TabIndex = 17;
             // 
             // btn_login
             // 
@@ -54,21 +65,11 @@
             this.btn_login.UseVisualStyleBackColor = false;
             this.btn_login.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tx_npass
-            // 
-            tx_npass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            tx_npass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            tx_npass.Location = new System.Drawing.Point(324, 146);
-            tx_npass.Multiline = true;
-            tx_npass.Name = "tx_npass";
-            tx_npass.Size = new System.Drawing.Size(364, 30);
-            tx_npass.TabIndex = 17;
-            // 
             // tx_username
             // 
             this.tx_username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.tx_username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tx_username.Location = new System.Drawing.Point(324, 96);
+            this.tx_username.Location = new System.Drawing.Point(324, 152);
             this.tx_username.Multiline = true;
             this.tx_username.Name = "tx_username";
             this.tx_username.Size = new System.Drawing.Size(364, 30);
@@ -79,7 +80,7 @@
             this.lb_npass.AutoSize = true;
             this.lb_npass.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_npass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.lb_npass.Location = new System.Drawing.Point(200, 139);
+            this.lb_npass.Location = new System.Drawing.Point(200, 195);
             this.lb_npass.Name = "lb_npass";
             this.lb_npass.Size = new System.Drawing.Size(84, 37);
             this.lb_npass.TabIndex = 15;
@@ -90,7 +91,7 @@
             this.lb_username.AutoSize = true;
             this.lb_username.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.lb_username.Location = new System.Drawing.Point(27, 96);
+            this.lb_username.Location = new System.Drawing.Point(27, 152);
             this.lb_username.Name = "lb_username";
             this.lb_username.Size = new System.Drawing.Size(257, 37);
             this.lb_username.TabIndex = 14;
@@ -116,7 +117,7 @@
             // 
             this.tx_renpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.tx_renpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tx_renpass.Location = new System.Drawing.Point(324, 193);
+            this.tx_renpass.Location = new System.Drawing.Point(324, 249);
             this.tx_renpass.Multiline = true;
             this.tx_renpass.Name = "tx_renpass";
             this.tx_renpass.Size = new System.Drawing.Size(364, 30);
@@ -127,11 +128,23 @@
             this.lb_renpass.AutoSize = true;
             this.lb_renpass.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_renpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.lb_renpass.Location = new System.Drawing.Point(104, 186);
+            this.lb_renpass.Location = new System.Drawing.Point(104, 242);
             this.lb_renpass.Name = "lb_renpass";
             this.lb_renpass.Size = new System.Drawing.Size(180, 37);
             this.lb_renpass.TabIndex = 22;
             this.lb_renpass.Text = "Repetir clave";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(273, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 73);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "MathIA";
             // 
             // form_regisro
             // 
@@ -139,6 +152,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tx_renpass);
             this.Controls.Add(this.lb_renpass);
             this.Controls.Add(this.btn_back);
@@ -162,5 +176,6 @@
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.TextBox tx_renpass;
         private System.Windows.Forms.Label lb_renpass;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -30,5 +30,10 @@ namespace Entrega
             form_regisro form3 = new form_regisro();
             form3.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
